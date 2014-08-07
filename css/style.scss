@@ -1,0 +1,49 @@
+@import '_normalize.scss';
+
+@import '_grid';
+
+$ttcRed: #e92128;
+
+body {
+	height: 100%;
+	color: #333;
+  	font-weight: 300;
+	font-size: 13px;
+	font-family: "Helvetic",sans-serif;
+	background-image: url(../images/brickwall.png);
+}
+
+// **********************
+// All Styles Go Below Here Bud
+//***********************
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+	text-align: center;
+}
+header{
+	@include column(12);
+	background-color: $ttcRed;
+		h1{
+			font-family: 'Yesteryear', cursive;
+			font-size: 72px;
+			letter-spacing: 1.5px;
+			background-color: #fff;
+		}
+}
+
+article{
+	@include column(12);
+	background-color: #fff;
+	height:500px;
+}
+
+footer{
+	@include column(12);
+	background-color: $ttcRed;
+}
+
+
+
+

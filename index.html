@@ -3,8 +3,57 @@
 <head>
 	<meta charset="UTF-8">
 	<title>API project</title>
+	<link href='http://fonts.googleapis.com/css?family=Yesteryear' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.css">
+	    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+			    <style type="text/css">
+			      html { height: 100% }
+			      body { height: 100%; margin: 0; padding: 0 }
+			      #map-canvas { height: 100% }
+			    </style>
+			    <script type="text/javascript"
+			      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwisPnHL9WjcVQf4_FYdMmMRRn-BkK9-M">
+			    </script>
+			    <script type="text/javascript">
+			      function initialize() {
+			        var mapOptions = {
+			          center: new google.maps.LatLng(-34.397, 150.644),
+			          zoom: 8
+			        };
+			        var map = new google.maps.Map(document.getElementById("map-canvas"),
+			            mapOptions);
+			      }
+			      google.maps.event.addDomListener(window, 'load', initialize);
+			    </script>
 </head>
 <body>
-	
+	<div class="container">
+		<header>
+			<h1>Fuck the Rocket!</h1>
+		</header>
+		<article class='appBody'>
+			<p>At one point you've been stranded at a TTC stop wondering what's best, the wait or the walk.</p>
+			<p>This app compares the time you'll spend walking to your destination against the wait for the next TTC 'rocket' to your location.</p>
+			<p>Enter your location and destination and find out whether you should:</p>
+			<h1 id="fuck"><span>Ride the rocket!</span></h1>
+			<!-- User Inputs location string-->
+			<label for="text">Enter Your Location:</label>
+			<input type="text" id="location1" placeholder="Ex: Queen street and Spadina">
+			<!-- User Inputs destination string -->
+			<label for="text">Enter Your Destination:</label>
+			<input type="text" id="location2" placeholder="Ex: Eaton center">
+			<!-- on click strings submit to google API methods -->
+			<button id="submit">Submit</button>	
+			    <!-- <div id="map-canvas"/> -->
+			  
+		</article>
+		<footer>
+			<p>This project was made by <a href="#">@ Enzofromspace</a></p>
+			<p><em>All results are approximations and do not take into account: Traffic, weather, or personal walking speed.</em></p>
+			<p><em>Find the code and help improve this project <a href="#">here</a></em></p>
+			<h6>A special thanks to all the hard working drivers of the TTC (<em> but only the ones who don't suck</em> )</h6>
+		</footer>
+
+	</div>
 </body>
 </html>
