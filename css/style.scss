@@ -10,7 +10,7 @@ body {
   	font-weight: 300;
 	font-size: 13px;
 	font-family: "Helvetic",sans-serif;
-	background-image: url(../images/brickwall.png);
+	background-image: url(../images/Yums.jpg);
 }
 
 // **********************
@@ -37,6 +37,28 @@ article{
 	@include column(12);
 	background-color: #fff;
 	height:500px;
+	.pbox{
+		padding-top: 2%;
+		@include column(6);
+		@include push(1);
+			p{
+				font-size: larger;
+				text-align: left;
+			}
+		}
+		#light{
+			margin-top:2%;
+		}
+		button {
+   	 	padding: 10px 15px;
+   	 	background: $ttcRed;
+   	 	border-radius: 10px;
+   	 	color: #FFF;
+   	 	font-family: 'Yesteryear', cursive;
+   	 	font-size: 32px;
+   	 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.6);
+   	 	box-shadow: -1px -1px -1px;
+	}
 }
 
 footer{
