@@ -3,6 +3,7 @@
 @import '_grid';
 
 $ttcRed: #e92128;
+$mustard: #F5D04C;
 
 body {
 	height: 100%;
@@ -21,6 +22,9 @@ body {
 	max-width: 960px;
 	margin: 0 auto;
 	text-align: center;
+	border: 5px dashed black;
+	background-color: rgba(233, 33, 40, 0.1);
+	box-shadow: 0px 0px 25px #000000;
 }
 header{
 	@include column(12);
@@ -29,27 +33,34 @@ header{
 			font-family: 'Yesteryear', cursive;
 			font-size: 72px;
 			letter-spacing: 1.5px;
-			background-color: #fff;
+			color: $mustard; 
+			text-shadow: 3px 3px 2px rgba(150, 150, 150, 1);
+			background: #fff;
 		}
 }
 
 article{
 	@include column(12);
-	background-color: #fff;
-	height:500px;
+	background:rgba(255,255,255, 0.9);
+	// height:500px;
 	.pbox{
 		padding-top: 2%;
-		@include column(6);
-		@include push(1);
+		@include column(4);
+		@include push(4);
 			p{
-				font-size: larger;
+				font-size: 20px;
 				text-align: left;
+				font-family: Helvetica, sans-serif;
+
 			}
 		}
 		#light{
 			margin-top:2%;
 		}
 		button {
+		@include column(4);
+		@include push(4);
+		widows: 30%;
    	 	padding: 10px 15px;
    	 	background: $ttcRed;
    	 	border-radius: 10px;
@@ -60,19 +71,36 @@ article{
    	 	box-shadow: -1px -1px -1px;
 	}
 }
+	
+	.gutter{
+		@include column(12);
+		height:15px;
+	}
 	#choices{
 		@include column(12);
-		background-color: $ttcRed;
+		// background-color: $ttcRed;
 
 	}
 	.showBox{
 		@include column(4);
+		background-color: #fff;
 		// width: 180px;
 		// height: 180px;
+		h2{
+			color:$mustard;
+		}
 	}
 footer{
 	@include column(12);
 	background-color: $ttcRed;
+	p, {
+		color: #fff;
+		font-size: 15px;
+	}
+	a{
+		color: $mustard;
+		text-decoration: none;
+	}
 }
 
 

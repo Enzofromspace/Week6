@@ -153,7 +153,11 @@ body {
 .container {
   max-width: 960px;
   margin: 0 auto;
-  text-align: center; }
+  text-align: center;
+  border: 5px dashed black;
+  background-color: rgba(233, 33, 40, 0.1);
+  -webkit-box-shadow: 0px 0px 25px #000000;
+          box-shadow: 0px 0px 25px #000000; }
 
 header {
   display: inline;
@@ -165,28 +169,36 @@ header {
     font-family: 'Yesteryear', cursive;
     font-size: 72px;
     letter-spacing: 1.5px;
-    background-color: #fff; }
+    color: #f5d04c;
+    text-shadow: 3px 3px 2px #969696;
+    background: #fff; }
 
 article {
   display: inline;
   float: left;
   width: 97.91667%;
   margin: 0 1.04167%;
-  background-color: #fff;
-  height: 500px; }
+  background: rgba(255, 255, 255, 0.9); }
   article .pbox {
     padding-top: 2%;
     display: inline;
     float: left;
-    width: 47.91667%;
+    width: 31.25%;
     margin: 0 1.04167%;
-    margin-left: 9.375%; }
+    margin-left: 34.375%; }
     article .pbox p {
-      font-size: larger;
-      text-align: left; }
+      font-size: 20px;
+      text-align: left;
+      font-family: Helvetica, sans-serif; }
   article #light {
     margin-top: 2%; }
   article button {
+    display: inline;
+    float: left;
+    width: 31.25%;
+    margin: 0 1.04167%;
+    margin-left: 34.375%;
+    widows: 30%;
     padding: 10px 15px;
     background: #e92128;
     border-radius: 10px;
@@ -197,18 +209,27 @@ article {
     -webkit-box-shadow: -1px -1px -1px;
             box-shadow: -1px -1px -1px; }
 
-#choices {
+.gutter {
   display: inline;
   float: left;
   width: 97.91667%;
   margin: 0 1.04167%;
-  background-color: #e92128; }
+  height: 15px; }
+
+#choices {
+  display: inline;
+  float: left;
+  width: 97.91667%;
+  margin: 0 1.04167%; }
 
 .showBox {
   display: inline;
   float: left;
   width: 31.25%;
-  margin: 0 1.04167%; }
+  margin: 0 1.04167%;
+  background-color: #fff; }
+  .showBox h2 {
+    color: #f5d04c; }
 
 footer {
   display: inline;
@@ -216,3 +237,9 @@ footer {
   width: 97.91667%;
   margin: 0 1.04167%;
   background-color: #e92128; }
+  footer p {
+    color: #fff;
+    font-size: 15px; }
+  footer a {
+    color: #f5d04c;
+    text-decoration: none; }
