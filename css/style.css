@@ -197,6 +197,19 @@ article {
     -webkit-box-shadow: -1px -1px -1px;
             box-shadow: -1px -1px -1px; }
 
+#choices {
+  display: inline;
+  float: left;
+  width: 97.91667%;
+  margin: 0 1.04167%;
+  background-color: #e92128; }
+
+.showBox {
+  display: inline;
+  float: left;
+  width: 31.25%;
+  margin: 0 1.04167%; }
+
 footer {
   display: inline;
   float: left;

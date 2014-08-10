@@ -60,7 +60,16 @@ article{
    	 	box-shadow: -1px -1px -1px;
 	}
 }
+	#choices{
+		@include column(12);
+		background-color: $ttcRed;
 
+	}
+	.showBox{
+		@include column(4);
+		// width: 180px;
+		// height: 180px;
+	}
 footer{
 	@include column(12);
 	background-color: $ttcRed;
